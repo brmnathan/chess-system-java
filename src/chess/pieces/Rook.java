@@ -30,7 +30,6 @@ public class Rook extends ChessPiece{
 		}
 		if (getBoard().positionExists(p) && isThereOpponetPiece(p))
 			mat[p.getRow()][p.getColumn()] = true;
-		
 		// Left
 		p.setValues(position.getRow(), position.getColumn() - 1);
 		while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
@@ -39,7 +38,6 @@ public class Rook extends ChessPiece{
 		}
 		if (getBoard().positionExists(p) && isThereOpponetPiece(p))
 			mat[p.getRow()][p.getColumn()] = true;
-		
 		// Right
 		p.setValues(position.getRow(), position.getColumn() + 1);
 		while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
@@ -48,7 +46,6 @@ public class Rook extends ChessPiece{
 		}
 		if (getBoard().positionExists(p) && isThereOpponetPiece(p))
 			mat[p.getRow()][p.getColumn()] = true;
-		
 		// Down
 		p.setValues(position.getRow() + 1, position.getColumn());
 		while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
@@ -59,6 +56,6 @@ public class Rook extends ChessPiece{
 			mat[p.getRow()][p.getColumn()] = true;
 		
 		return mat;
-	}
+	} 
 
 }
